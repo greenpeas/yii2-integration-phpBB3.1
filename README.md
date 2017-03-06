@@ -9,7 +9,7 @@ About
 -----
 **Version:** 0.3.7
 
-**Authors:** yiiframework.ru, Felix Manea, Äìèòðèé Åëèñååâ, Mefistophell Nill
+**Authors:** yiiframework.ru, Felix Manea, Äìèòðèé Åëèñååâ, Mefistophell Nill, Artyomov Anton
 
 Used
 ----
@@ -28,13 +28,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require nill/forum "dev-master"
+php composer.phar require anart/forum "dev-master"
 ```
 
 or add
 
 ```
-"nill/forum": "dev-master"
+"anart/forum": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -42,7 +42,7 @@ to the require section of your `composer.json` file.
 Install from an Archive File
 ----------------------------
 
-- Add folder `/vendor/nill/forum/`
+- Add folder `/vendor/anart/forum/`
 
 [Github: yii2-integration-phpBB3.2](https://github.com/greenpeas/yii2-integration-phpBB3.2)
 
