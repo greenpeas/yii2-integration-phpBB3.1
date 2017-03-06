@@ -1,10 +1,10 @@
 {
-    "name": "nill/forum",
-    "description": "yii2-integration-phpBB3.1",
+    "name": "anart/forum",
+    "description": "yii2-integration-phpBB3.2",
     "authors": [
         {
-            "name": "Nill Mefistophell",
-            "email": "asklepiy@i.ua"
+            "name": "Artyomov Anton",
+            "email": "artyomov.anton@gmail.com"
         }
     ],
     "minimum-stability": "dev",
