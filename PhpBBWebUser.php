@@ -1,6 +1,6 @@
 <?php
 
-namespace nill\forum;
+namespace anart\forum;
 
 use Yii;
 use yii\web\User;

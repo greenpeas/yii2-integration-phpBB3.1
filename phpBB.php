@@ -32,7 +32,7 @@
  *
  */
 
-namespace nill\forum;
+namespace anart\forum;
 
 use Yii;
 use nill\forum\phpbbClass;

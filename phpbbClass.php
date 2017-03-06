@@ -1,6 +1,6 @@
 <?php
 
-namespace nill\forum;
+namespace anart\forum;
 
 use nill\forum\phpBBUserValidation;
 

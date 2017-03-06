@@ -1,6 +1,6 @@
 <?php
 
-namespace nill\forum;
+namespace anart\forum;
 
 /**
  * Validation class

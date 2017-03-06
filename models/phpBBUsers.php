@@ -1,6 +1,6 @@
 <?php
 
-namespace nill\forum\models;
+namespace anart\forum\models;
 
 use Yii;
 
