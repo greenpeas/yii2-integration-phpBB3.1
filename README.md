@@ -1,7 +1,7 @@
-yii2-integration-phpBB3.1
+yii2-integration-phpBB3.2
 =========================
 
-This extension is intended to integrate the phpBB 3.1.x with the Yii2. 
+This extension is intended to integrate the phpBB 3.2.x with the Yii2. 
 Extension is intended for synchronization of a login, registration and editing of profile data, such as an e-mail address and  password. 
 An extension [yii2-users-module](https://github.com/vova07/yii2-users-module) was used as a users model, but you can connect and configure the behavior of your model.
 
@@ -15,7 +15,7 @@ Used
 ----
 - Yii framework 2.x
 - Yii-Start Applications - yii2-start-users (https://github.com/vova07/yii2-users-module)
-- phpBB 3.1.x
+- phpBB 3.2.x
 
 Integration
 ============
@@ -44,7 +44,7 @@ Install from an Archive File
 
 - Add folder `/vendor/nill/forum/`
 
-[Github: yii2-integration-phpBB3.1](https://github.com/8sun/yii2-integration-phpBB3.1)
+[Github: yii2-integration-phpBB3.2](https://github.com/greenpeas/yii2-integration-phpBB3.2)
 
 - Download and unpack files into created directory
 
