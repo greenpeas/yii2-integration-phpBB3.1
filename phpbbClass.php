@@ -2,7 +2,7 @@
 
 namespace anart\forum;
 
-use nill\forum\phpBBUserValidation;
+use anart\forum\phpBBUserValidation;
 
 /*
   PHPBB Forum manipulation Class
@@ -27,7 +27,7 @@ class phpbbClass {
 
     //initialize phpbb
     function init($prepare_for_login = false) {
-        global $dire, $phpbb_root_path, $phpEx, $db, $config, $user, $auth, $phpbb_dispatcher, $cache, $template, $request, $phpbb_container, $symfony_request, $phpbb_filesystem;
+        global $dire, $phpbb_root_path, $phpEx, $db, $config, $user, $auth, $phpbb_dispatcher, $cache, $template, $request, $phpbb_container, $symfony_request, $phpbb_filesystem, $table_prefix;
         if ($prepare_for_login && !defined("IN_LOGIN"))
             define("IN_LOGIN", true);
         require_once($phpbb_root_path . 'common.' . $phpEx);
@@ -35,13 +35,14 @@ class phpbbClass {
         //session management
         $request->enable_super_globals();
         $user->session_begin();
-//	$auth->acl($user->data);
-//                
+	$auth->acl($user->data);
+        $user->setup();                
     }
 
     //user_login
     public function user_login($phpbb_vars) {
         global $phpbb_root_path, $phpEx, $db, $config, $user, $auth, $cache, $template, $_SID;
+        
         //fail presumption
         $phpbb_result = "FAIL";
 
@@ -59,6 +60,7 @@ class phpbbClass {
         //$validation = login_db($phpbb_vars["username"], $phpbb_vars["password"]);
         $valid = new phpBBUserValidation($db);
         $validation = $valid->login($phpbb_vars["username"], $phpbb_vars["password"]);
+        
         if ($validation['status'] == 3 && $auth->login($phpbb_vars["username"], $phpbb_vars["password"], $phpbb_vars["autologin"], $phpbb_vars["viewonline"], $phpbb_vars["admin"]))
             $phpbb_result = "SUCCESS";
 

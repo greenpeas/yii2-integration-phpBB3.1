@@ -7,7 +7,7 @@ use yii\db\ActiveRecord;
 /**
  * Поведение расширяющее модель User
  * Используется для изменений данных от пользователя,
- * а так же для сквозной регистрации в phpBB 3.1.x
+ * а так же для сквозной регистрации в phpBB 3.2.x
  */
 class PhpBBUserBahavior extends \yii\base\Behavior {
 

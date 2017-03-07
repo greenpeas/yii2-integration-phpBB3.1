@@ -51,13 +51,13 @@ Install from an Archive File
 - Add to extensions `/vendor/yiisoft/extensions.php`:
 
 ```
-'nill/forum' => 
+'anart/forum' => 
     array (
-        'name' => 'nill/forum',
+        'name' => 'anart/forum',
         'version' => '0.1.0.0',
         'alias' => 
         array (
-            '@nill/forum' => $vendorDir . '/nill/forum',
+            '@anart/forum' => $vendorDir . '/anart/forum',
         ),
     ),
 ```
@@ -69,7 +69,7 @@ Part 2: Add a component and set configurations
 
 ```
         'phpBB' => [
-            'class' => 'nill\forum\phpBB',
+            'class' => 'anart\forum\phpBB',
             'path' => dirname(dirname(__DIR__)). '\forum',
         ],
 ```
@@ -78,7 +78,7 @@ Part 2: Add a component and set configurations
 
 ```
         'user' => [
-            'class' => 'nill\forum\PhpBBWebUser',
+            'class' => 'anart\forum\PhpBBWebUser',
             'loginUrl'=>['/login'],
             'identityClass' => 'vova07\users\models\frontend\User',
             // enable cookie-based authentication
@@ -117,7 +117,7 @@ Part 4: Add behavior to user Model
 
 - Add this code to the top of User class:
 
-`use nill\forum\behaviors\PhpBBUserBahavior;`
+`use anart\forum\behaviors\PhpBBUserBahavior;`
 
 and
 
@@ -268,7 +268,7 @@ Add to User model the following row:
 ---------------------------
 
 ```
-use nill\forum\models\phpBBUsers;
+use anart\forum\models\phpBBUsers;
 
 public function getPhpbbuser()
 {

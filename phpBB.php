@@ -35,7 +35,7 @@
 namespace anart\forum;
 
 use Yii;
-use nill\forum\phpbbClass;
+use anart\forum\phpbbClass;
 use yii\base\Component;
 
 class phpBB extends Component {
@@ -56,7 +56,7 @@ class phpBB extends Component {
      * phpBB user data table
      * @var string
      */
-    public $user_table = 'frm_users';
+    public $user_table = 'phpbb_users';
     protected $_phpbb;
 
     public function init() {

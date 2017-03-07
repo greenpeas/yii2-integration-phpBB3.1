@@ -18,8 +18,9 @@ class PhpBBWebUser extends User {
     }
 
     protected function afterLogin($identity, $fromCookie, $duration) {
+        
         if ($this->_identity !== null) {
-            if (\Yii::$app->phpBB->login($this->_identity->username, $this->_identity->password_reg) != 'SUCCESS') {
+            if (\Yii::$app->phpBB->login($this->_identity->username, $this->_identity->password_hash) != 'SUCCESS') {
                 throw new InvalidParamException('Не удалось пройти авторизацию на форуме');
             }
         }
